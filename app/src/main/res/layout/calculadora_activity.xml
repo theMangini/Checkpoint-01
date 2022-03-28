@@ -1,6 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
+    <EditText
+        android:id="@+id/editTextValor1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Valor 1"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextValor2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Valor 2"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValor1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupCalculadora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValor2">
+
+        <TextView
+            android:id="@+id/txtViewOperacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Operação" />
+
+        <RadioButton
+            android:id="@+id/rdbSoma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soma" />
+
+        <RadioButton
+            android:id="@+id/rdbSubtracao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subtracao" />
+
+        <RadioButton
+            android:id="@+id/rdbMultiplicacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Multiplicação" />
+
+        <RadioButton
+            android:id="@+id/rdbDivisao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Divisão" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalcularNumero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupCalculadora" />
 </androidx.constraintlayout.widget.ConstraintLayout>
