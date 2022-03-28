@@ -22,6 +22,9 @@
 
         <activity android:name=".ContaTelefonicaActivity"
             android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".ResultadoContaTelefonicaActivity"
+            android:parentActivityName=".ContaTelefonicaActivity"/>
     </application>
 
 </manifest>

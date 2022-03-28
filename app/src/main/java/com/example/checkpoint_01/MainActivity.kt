@@ -27,7 +27,5 @@ class MainActivity : AppCompatActivity() {
             """.trimMargin("|"))
             alertDialog.setPositiveButton("OK", null)
         }
-
-
     }
 }
