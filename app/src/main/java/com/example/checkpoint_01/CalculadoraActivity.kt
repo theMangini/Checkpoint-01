@@ -7,6 +7,6 @@ class CalculadoraActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.conta_telefonica_activity)
+        setContentView(R.layout.calculadora_activity)
     }
 }
