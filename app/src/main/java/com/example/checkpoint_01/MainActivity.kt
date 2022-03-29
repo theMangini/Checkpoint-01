@@ -11,11 +11,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val intentContaTelefonica = Intent(this, ContaTelefonicaActivity::class.java)
+
         var intentCalculadora = Intent(this, CalculadoraActivity::class.java)
+        var intentContaTelefonica = Intent(this, ContaTelefonicaActivity::class.java)
 
         btnContaTel.setOnClickListener{
             startActivity(intentContaTelefonica)
+        }
+
+        btnCalculadora.setOnClickListener {
+            startActivity(intentCalculadora)
         }
 
         btnIntegrantes.setOnClickListener{
@@ -27,10 +32,7 @@ class MainActivity : AppCompatActivity() {
                 |Arthur Silva Borges
             """.trimMargin("|"))
             alertDialog.setPositiveButton("OK", null)
-        }
-
-        btnCalculadora.setOnClickListener {
-            startActivity(intentCalculadora)
+            alertDialog.create().show()
         }
     }
 }
