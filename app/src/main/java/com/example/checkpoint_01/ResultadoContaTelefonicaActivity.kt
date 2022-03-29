@@ -10,9 +10,9 @@ class ResultadoContaTelefonicaActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.resultado_conta_telefonica_activity)
 
-        resultadoAssinatura.text = intent.getStringExtra("assinatura")
-        resultadoCelular.text = intent.getStringExtra("minutosChamadaCelular")
-        resultadoLocal.text = intent.getStringExtra("minutosChamadaLocal")
-        resultadoValorTotal.text = intent.getStringExtra("total")
+        resultadoAssinatura.text = intent.getStringExtra("valorAssinatura")
+        resultadoCelular.text = intent.getStringExtra("valorChamadaCelular")
+        resultadoLocal.text = intent.getStringExtra("valorChamadaLocal")
+        resultadoValorTotal.text = intent.getStringExtra("valorTotal")
     }
 }
